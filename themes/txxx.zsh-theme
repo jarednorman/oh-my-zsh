@@ -5,9 +5,7 @@ function what_ruby {
     fi
 }
 
-function job_count { echo `jobs -l | wc -l` }
-
-RPROMPT='%{$fg[green]%}$(job_count) jobs%{$reset_color%} | %{$fg[blue]%}$(what_ruby)%{$reset_color%}'
+RPROMPT='%{$fg[blue]%}$(what_ruby)%{$reset_color%}'
 PROMPT='$(git_prompt_info)%{$fg[magenta]%}%n%{$reset_color%} at %{$fg[cyan]%}%m
 %{$fg[yellow]%}%~ %{$fg[black]%}$%{$reset_color%} '
 
