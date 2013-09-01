@@ -5,9 +5,9 @@ function what_ruby {
     fi
 }
 
-RPROMPT='%{$fg[black]%}$(what_ruby)%{$reset_color%}'
+RPROMPT='%{$fg[white]%}$(what_ruby)%{$reset_color%}'
 PROMPT='$(git_prompt_info)%{$fg[blue]%}%n%{$fg[blue]%}@%{$fg[blue]%}%m
-%{$fg[white]%}%~ %{$fg_bold[cyan]%}$%{$reset_color%} '
+%{$fg[black]%}%~ %{$fg_bold[cyan]%}$%{$reset_color%} '
 
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} +%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%} ×%{$reset_color%} "
