@@ -1,7 +1,7 @@
 
 function what_ruby {
     if which rvm-prompt &> /dev/null; then
-        echo $(~/.rvm/bin/rvm-prompt i v)
+        echo $(~/.rvm/bin/rvm-prompt i v p g)
     fi
 }
 
