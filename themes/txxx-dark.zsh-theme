@@ -3,7 +3,6 @@
 ZSH_THEME_GIT_TIME_SINCE_COMMIT_SHORT="%{$fg[green]%}"
 ZSH_THEME_GIT_TIME_SHORT_COMMIT_MEDIUM="%{$fg[yellow]%}"
 ZSH_THEME_GIT_TIME_SINCE_COMMIT_LONG="%{$fg[red]%}"
-ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL="%{$fg[cyan]%}"
 
 #Customized git status, oh-my-zsh currently does not allow render dirty status before branch
 git_custom_status() {
@@ -63,7 +62,6 @@ function what_ruby {
 }
 
 RPROMPT='%{$fg[black]%}$(what_ruby)%{$reset_color%}'
-# Just add $(git_time_since_commit) to your ZSH PROMPT and you're set
 PROMPT='$(git_prompt_info)$(git_time_since_commit) %{$fg[blue]%}%n%{$fg[blue]%}@%{$fg[blue]%}%m
 %{$fg[white]%}%~ %{$fg_bold[cyan]%}$%{$reset_color%} '
 
